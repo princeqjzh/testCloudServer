@@ -3,5 +3,5 @@ try:
 except ImportError:
     pass
 
-PORT = 9020
+PORT = 9000
 SERVICE_NAME = 'auth'

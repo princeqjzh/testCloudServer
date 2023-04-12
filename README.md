@@ -126,7 +126,19 @@ QQ群：839084842
 - 站内信启用 websocket 和 redis
 
 
+> 4. 本地调试方法
 
+- 环境变量中配置如下参数：
+    ```
+    export mysql_host=<your mysql host>
+    export mysql_port=<your mysql port>
+    export mysql_user=<your mysql username>
+    export mysql_pwd=<your mysql password>
+    ```
+- 运行 run_all.py,  命令：
+    ``` bash
+    python run_all.py
+    ```
 
 
 

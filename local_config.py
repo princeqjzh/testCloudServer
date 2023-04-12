@@ -1,10 +1,17 @@
+import os
+
 # 环境 ： dev 开发环境
 TCLOUD_ENV = 'dev'
 # 服务 ： dev 开发环境
 SERVER_ENV = 'dev'
 
 # SQL 连接字符串
-SQLALCHEMY_DATABASE_URI = 'mysql://<username>:<password>@<host>:<port>/<db>?charset=utf8'
+mysql_host = os.getenv('mysql_host')
+mysql_port = os.getenv('mysql_port')
+mysql_user = os.getenv('mysql_user')
+mysql_pwd = os.getenv('mysql_pwd')
+
+SQLALCHEMY_DATABASE_URI = f'mysql://{mysql_user}:{mysql_pwd}@{mysql_host}:{mysql_port}/demo?charset=utf8'
 
 # 密钥相关
 SECRET = '####'
