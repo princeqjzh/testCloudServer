@@ -129,15 +129,22 @@ QQ群：839084842
 > 4. 本地调试方法
 
 - 环境变量中配置如下参数：
-    ```
+    ```bash
     export mysql_host=<your mysql host>
     export mysql_port=<your mysql port>
     export mysql_user=<your mysql username>
     export mysql_pwd=<your mysql password>
     ```
+
+- 安装 Python 依赖库
+    ```bash
+    pip install -r requirements.txt
+    ```
+
 - 运行 run_all.py,  命令：
     ``` bash
-    python run_all.py
+    export PYTHONPATH=<project root path>
+    python apps/run_all.py
     ```
 
 
